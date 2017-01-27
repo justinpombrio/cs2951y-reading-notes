@@ -146,7 +146,7 @@ program vs. not?
 
 ### A Confusion
 
-*Computational Literacy*. This section seems to mix up:
+*Computational Literacy* (1.2.4). This section seems to mix up:
 
 - The internet, which is indeed akin to the printing press
 - Word processing and such
