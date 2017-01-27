@@ -160,6 +160,11 @@ scientists, but that was already covered in "computational thinking".
 Is it people programming in spreadsheets that they share? What do
 actual example look like?
 
+> animated greeting cards
+> spreadsheet formulas
+> tweaking/appreciating websites
+> musicians using MaxMSP
+
 ### A Confusion
 
 Pg. 37: What is "process" here? Earlier in the book, it was *defined*
