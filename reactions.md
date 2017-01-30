@@ -81,10 +81,14 @@ Is the *common goal* realistic?
 I saw a confusion about probability in a Nautilus article today that I
 only know how to explain if the author (a physicist) believes that the
 probability of an event is independent of your knowledge. This is a
-*really* fundamental mistake. Are misconceptions more common than
-conceptions? For intro CS students they are. Should I bet, by default,
-that no one understands anything, until very explicitly proven
-otherwise?
+*really* fundamental mistake. (It's also why there's a picture of a
+pipe on my wall.) Are there misconceptions like this that experienced
+computer scientists live with?
+
+And intro CS students seem to have just about every possible
+misconception. Does "learning" consist of picking a random hypothesis
+consistent with the evidence and believing it until it's unequivocally
+disproven?
 
 (For curiosity, the article is
 [here](http://cosmos.nautil.us/feature/120/the-crisis-of-the-multiverse);
