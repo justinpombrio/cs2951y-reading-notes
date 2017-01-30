@@ -1,9 +1,11 @@
-<p><link rel="stylesheet" href="tufte.css"/></p>
+<p><link rel="stylesheet" href="github.css"/></p>
 
 <h1>Reading Notes for Brown CS 2951y:<br/>
 (Formal Semantics & Notational Machines)</h1>
 
 <p>(Justin Pombrio)</p>
+
+<p><a href="reactions.html">Class-ly reactions are here</a></p>
 
 <h1>Class Notes</h1>
 
@@ -121,60 +123,84 @@ much programming.</p>
 <p>Some programming methods/environments discuessed:
 LOGO, Smalltalk, ISDP, Emile, Bootstrap, Boxer.</p>
 
-<h1>Reactions</h1>
+<h2>Sorva: VPS in Introductory Programming Education</h2>
 
-<h2>Day 1</h2>
+<h3>Chapter 2</h3>
 
-<h3>A Surprise</h3>
+<p><strong>Common Goal</strong> of intro CS: students should be "capable of developing a
+(small) program which solves a problem that has been expressed vaguely
+in non-programming terms."</p>
 
-<p>In the US, CS is classified as <em>vocational</em>, not <em>STEM</em>.</p>
+<h4>Bloom Taxonomy</h4>
 
-<h3>A Captivation</h3>
+<blockquote>
+  <p>Recall, Understand, Apply, Analyze, Evaluate, Create</p>
+</blockquote>
 
-<p>The three perspectives.</p>
+<p>Is it meaningful? Yes: it has been validated, even in the context of
+CS ed (Whalley et. al 2006). Untrained academics apply it
+inconsistently, however.</p>
 
-<h3>A Disagreement</h3>
+<p>The Bloom Taxonomy suggests that the <em>common goal</em> is demanding.</p>
 
-<p>Says that intro CS is harder than intro math or an intro science.
-The argument is that students come in with (at least some) real-life
-knowledge that applies. But students have no experience with
-unambiguous languages.</p>
+<h4>SOLO Taxonomy</h4>
 
-<p>However, math is like that, except that you don't have a computer to
-check your work.</p>
+<p>Unlike Bloom, SOLO aims to categorize student <em>responses</em>, rather than
+teacher <em>questions</em>.</p>
 
-<h3>A Question</h3>
+<blockquote>
+  <p>Prestructural, Unistructural, Multistructural, Relational, Extended
+Abstract</p>
+</blockquote>
 
-<p>Rainfall problem: how do results differ when students test their
-program vs. not?</p>
+<p>Or, from the original publication:</p>
 
-<h3>A Confusion</h3>
+<blockquote>
+  <p>incoherent, linear, conventional, integrated, and metaphoric</p>
+</blockquote>
 
-<p><em>Computational Literacy</em>. This section seems to mix up:</p>
+<p>I thought these categories sounded hopelessly vague, until they were
+described in the context of a programming question (describe how this
+code works):</p>
+
+<ol>
+<li><em>Prestructural</em>: Lacks knowledge to answer the question (confused response)</li>
+<li><em>Unistructural</em>: Describes one part of the code</li>
+<li><em>Multistructural</em>: Line-by-line description</li>
+<li><em>Relational</em>: Summary of the code w.r.t. its purpose</li>
+</ol>
+
+<p>Like Bloom, SOLO suggests that intro CS has high expectations.</p>
+
+<p>Conclusion: CS educators may be systematically underestimating the
+difficulty of what they hope students will learn.</p>
+
+<p><strong>Question</strong>: Is the <em>common goal</em> realistic?</p>
+
+<h3>Chapter 3</h3>
+
+<p>Many students are not learning to write programs in CS1. Many are not
+even learning to <em>trace</em> programs (given a program, describe what
+happens as it runs).</p>
+
+<p>Coding is hard, so what's a good learning path?</p>
 
 <ul>
-<li>The internet, which is indeed akin to the printing press</li>
-<li>Word processing and such</li>
-<li>Computational literacy</li>
+<li>Learn to read before learning to write? Maybe not: Simon
+et. al 2009.</li>
+<li>Bloom's taxonomy? Predicts <em>difficulty</em>, but does not give a
+<em>learning path</em>.</li>
+<li><em>Trace</em> and <em>explain</em> first? This is the hypothesis of BRACElet.
+They give evidence that <em>basic</em> tracing and explanation are required
+for <em>basic</em> program writing.</li>
 </ul>
 
-<p>"We see coding as a new way for people to organize, express, and share
-their ideas."</p>
+<p>Some misconceptions (there's a great list on page 359 (the 367th page)):</p>
 
-<p>What exactly does this sharing look like? It's relevant for
-scientists, but that was already covered in "computational thinking".
-Is it people programming in spreadsheets that they share? What do
-actual example look like?</p>
-
-<h3>A Confusion</h3>
-
-<p>Pg. 37: What is "process" here? Earlier in the book, it was <em>defined</em>
-as being what a program does, but here it's supposed to be broader
-than CS.</p>
-
-<h3>A Surprise</h3>
-
-<p>Apparently LOGO taught poorly. I'm curious to see the studies that
-killed it, what the language's aims were and what the results were.
-(My guess: the aims presented for LOGO were way out of whack with what
-one could reasonably expect to learn from the language.)</p>
+<ul>
+<li>Superbug: give intentionality to the machine</li>
+<li>Conflate "let" with mathematical "="</li>
+<li>Confusions with variable initialization</li>
+<li>Confusions with recursion</li>
+<li>OOP (many)</li>
+</ul>
