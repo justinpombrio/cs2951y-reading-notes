@@ -1,9 +1,11 @@
-<link rel="stylesheet" href="tufte.css"/>
+<link rel="stylesheet" href="github.css"/>
 
 <h1>Reading Notes for Brown CS 2951y:<br/>
 (Formal Semantics & Notational Machines)</h1>
 
 (Justin Pombrio)
+
+[Class-ly reactions are here](reactions.html)
 
 # Class Notes
 
@@ -21,8 +23,6 @@ From this perspective, not having a curriculum when teaching could be
 good.
 
 # Reading Notes
-
-
 
 
 ## Qualify Your Quantifiers...Or, Exactly Who All Is CS4?
@@ -117,63 +117,73 @@ Some programming methods/environments discuessed:
 LOGO, Smalltalk, ISDP, Emile, Bootstrap, Boxer.
 
 
-# Reactions
+## Sorva: VPS in Introductory Programming Education
 
-## Day 1
+### Chapter 2
 
-### A Surprise
+**Common Goal** of intro CS: students should be "capable of developing a
+(small) program which solves a problem that has been expressed vaguely
+in non-programming terms."
 
-In the US, CS is classified as *vocational*, not *STEM*.
+#### Bloom Taxonomy
 
-### A Captivation
+> Recall, Understand, Apply, Analyze, Evaluate, Create
 
-The three perspectives.
+Is it meaningful? Yes: it has been validated, even in the context of
+CS ed (Whalley et. al 2006). Untrained academics apply it
+inconsistently, however.
 
-### A Disagreement
+The Bloom Taxonomy suggests that the *common goal* is demanding.
 
-Says that intro CS is harder than intro math or an intro science.
-The argument is that students come in with (at least some) real-life
-knowledge that applies. But students have no experience with
-unambiguous languages.
+#### SOLO Taxonomy
 
-However, math is like that, except that you don't have a computer to
-check your work.
+Unlike Bloom, SOLO aims to categorize student *responses*, rather than
+teacher *questions*.
 
-### A Question
+> Prestructural, Unistructural, Multistructural, Relational, Extended
+> Abstract
 
-Rainfall problem: how do results differ when students test their
-program vs. not?
+Or, from the original publication:
 
-### A Confusion
+> incoherent, linear, conventional, integrated, and metaphoric
 
-*Computational Literacy* (1.2.4). This section seems to mix up:
+I thought these categories sounded hopelessly vague, until they were
+described in the context of a programming question (describe how this
+code works):
 
-- The internet, which is indeed akin to the printing press
-- Word processing and such
-- Computational literacy
+1. *Prestructural*: Lacks knowledge to answer the question (confused response)
+2. *Unistructural*: Describes one part of the code
+3. *Multistructural*: Line-by-line description
+4. *Relational*: Summary of the code w.r.t. its purpose
 
-"We see coding as a new way for people to organize, express, and share
-their ideas."
+Like Bloom, SOLO suggests that intro CS has high expectations.
 
-What exactly does this sharing look like? It's relevant for
-scientists, but that was already covered in "computational thinking".
-Is it people programming in spreadsheets that they share? What do
-actual example look like?
+Conclusion: CS educators may be systematically underestimating the
+difficulty of what they hope students will learn.
 
-> animated greeting cards
-> spreadsheet formulas
-> tweaking/appreciating websites
-> musicians using MaxMSP
+**Question**: Is the *common goal* realistic?
 
-### A Confusion
 
-Pg. 37: What is "process" here? Earlier in the book, it was *defined*
-as being what a program does, but here it's supposed to be broader
-than CS.
+### Chapter 3
 
-### A Surprise
+Many students are not learning to write programs in CS1. Many are not
+even learning to *trace* programs (given a program, describe what
+happens as it runs).
 
-Apparently LOGO taught poorly. I'm curious to see the studies that
-killed it, what the language's aims were and what the results were.
-(My guess: the aims presented for LOGO were way out of whack with what
-one could reasonably expect to learn from the language.)
+Coding is hard, so what's a good learning path?
+
+- Learn to read before learning to write? Maybe not: Simon
+  et. al 2009.
+- Bloom's taxonomy? Predicts *difficulty*, but does not give a
+  *learning path*.
+- *Trace* and *explain* first? This is the hypothesis of BRACElet.
+  They give evidence that *basic* tracing and explanation are required
+  for *basic* program writing.
+
+Some misconceptions (there's a great list on page 359 (the 367th page)):
+
+- Superbug: give intentionality to the machine
+- Conflate "let" with mathematical "="
+- Confusions with variable initialization
+- Confusions with recursion
+- OOP (many)
