@@ -123,6 +123,48 @@ much programming.</p>
 <p>Some programming methods/environments discuessed:
 LOGO, Smalltalk, ISDP, Emile, Bootstrap, Boxer.</p>
 
+<h2>Camels and Humps: a Retraction</h2>
+
+<p>"I continue to believe, however, that Dehnadi had uncovered the first
+evidence of an important phenomenon in programming learners. Later
+research seems to confirm that belief."</p>
+
+<p><strong>Disagreement:</strong> Is it supposed to be surprising that a test that
+  (indirectly) measures programming aptitude predicts performance in a
+  programming class?</p>
+
+<p>"That document was very misleading and, because web documents persist,
+it continues to mislead to this day."</p>
+
+<p><strong>Disagreement:</strong> That's because it's <em>hosted</em> on Dehnadi's <em>website</em>,
+  which doesn't mention the <em>retraction</em>.</p>
+
+<h2>Markman: Knowledge Representation (Intro)</h2>
+
+<p>Gives a <em>beautiful</em> proof that we're better at concrete reasoning than
+abstract.</p>
+
+<p><strong>Task one:</strong> you have a deck of cards with letters on one
+side and numbers on the other. You see (one side of) four of the
+cards. You'd like to check a rule, that if a card has a vowel on one
+side then it has an odd number on the other. Which cards do you need
+to check?</p>
+
+<pre><code>A 7 J 4
+</code></pre>
+
+<p><strong>Task two:</strong> you need to verify that a bar is correctly only giving
+beer to customers over 21. Which people do you need to check?</p>
+
+<pre><code>Person 1: you know to be 18
+Person 2: you know to be 22
+Person 3: holding a beer
+Person 4: drinking club soda
+</code></pre>
+
+<p>My intuition tells me the answer to task two, but throws up its hands
+at task one.</p>
+
 <h2>Sorva: VPS in Introductory Programming Education</h2>
 
 <h3>Chapter 2</h3>
@@ -204,3 +246,89 @@ for <em>basic</em> program writing.</li>
 <li>Confusions with recursion</li>
 <li>OOP (many)</li>
 </ul>
+
+<h3>Chapter 4</h3>
+
+<h4>Mental Representations</h4>
+
+<p>"Markman (1999, pp. 5-11) defines a <em>representation</em> as something
+that: 1) is about and captures aspects of a <em>represented world</em>; 2)
+exists in a <em>representing world</em> that is an abstraction of the
+represented world; 3) relies on rules that map elements in the
+represented world to elements in the representing world, and 4) is
+accompanied by <em>processes</em> that allow people or intelligent systems to
+make sense of the representation."</p>
+
+<p><strong>Interesting idea:</strong> categorize mental representations in the same
+  bucket as, e.g., diagrams.</p>
+
+<p><strong>Memory:</strong></p>
+
+<pre><code>Sensory memory -&gt; working memory &lt;-&gt; long-term memory
+   (&lt; 1 sec)     (few secs; manip)   (long term storage)
+</code></pre>
+
+<p><strong>Schema:</strong> a mental structure that contains generic conceptual
+  knowledge. Specifically: reasonable ranges of attributes &amp;
+  stereotypes.</p>
+
+<p>Schemas change by:</p>
+
+<ul>
+<li><em>Accretion:</em> add knowledge to existing schema</li>
+<li><em>Tuning:</em> tweak the range / typicality of a schema</li>
+<li><em>Restructuring:</em> create / delete / reorganize schemas</li>
+</ul>
+
+<p><strong>Script/Event Schema:</strong> schema for a process, e.g. going to a
+sit-down restaurant.</p>
+
+<p><strong>Expertise:</strong> Consensus is that experts are experts not because
+they are more intelligent, or because they have domain-independent
+problem solving skills, but because of schemas developed through
+long practice.</p>
+
+<p><strong>Plan:</strong> A stereotypical structures in a program. E.g.: running-total,
+  sentinel-controlled-loop.</p>
+
+<p><strong>Disagreement:</strong> In the rainfall problem, why are students expected
+  to merge all of their plans inside a <code>for</code> loop? These are intro
+  students: teach them to break the problem down into simpler steps.
+  1: truncate the list at 999, 2: filter out the negative numbers, 3:
+  take the average, 4: print it. Write helper functions for each step
+  as necessary. (The assumption I'm making is that sequential plan
+  composition is easier than merging plans together.)</p>
+
+<p><strong>Surprise:</strong> "There is considerable empirical evidence that plans and
+plan schemas are the basic cognitive chunks used in designing and
+understanding programs."</p>
+
+<p>Rist: people use top-down, breadth-first development whenever they can
+(whenever the problem is familiar and they have a schema for it).
+When they can't, people program bottom-up, depth-first.</p>
+
+<p><strong>Readme:</strong> Sajaniemi (2002) variable-related plan schemas.</p>
+
+<p>A common suggestion: we should teach plan schemas explicitly.</p>
+
+<h4>Cognitive Load Theory</h4>
+
+<blockquote>
+  <p>{Intrinstic, Germane, Extraneous} cognitive load</p>
+</blockquote>
+
+<p><strong>Expertise Reversal Effect:</strong> Learning activities that are useful for
+novices become useless or even harmful to experts.</p>
+
+<p>Ways to increase <em>germane</em> learning:</p>
+
+<ul>
+<li><em>Variable Examples Effect:</em> give examples that differ on the surface</li>
+<li><em>Imagination Effect:</em> imagine "carrying out procedures related to
+worked-out examples". Experts only.</li>
+<li><em>4C/ID</em>: Puts it all together to design learning around cognitive
+load theory.</li>
+</ul>
+
+<p>Studies show: expert programmer commentaries are useful (compared to
+actually writing code).</p>

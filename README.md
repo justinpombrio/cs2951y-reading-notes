@@ -117,6 +117,49 @@ Some programming methods/environments discuessed:
 LOGO, Smalltalk, ISDP, Emile, Bootstrap, Boxer.
 
 
+## Camels and Humps: a Retraction
+
+"I continue to believe, however, that Dehnadi had uncovered the first
+evidence of an important phenomenon in programming learners. Later
+research seems to confirm that belief."
+
+**Disagreement:** Is it supposed to be surprising that a test that
+  (indirectly) measures programming aptitude predicts performance in a
+  programming class?
+
+"That document was very misleading and, because web documents persist,
+it continues to mislead to this day."
+
+**Disagreement:** That's because it's *hosted* on Dehnadi's *website*,
+  which doesn't mention the *retraction*.
+
+
+## Markman: Knowledge Representation (Intro)
+
+Gives a *beautiful* proof that we're better at concrete reasoning than
+abstract.
+
+**Task one:** you have a deck of cards with letters on one
+side and numbers on the other. You see (one side of) four of the
+cards. You'd like to check a rule, that if a card has a vowel on one
+side then it has an odd number on the other. Which cards do you need
+to check?
+
+    A 7 J 4
+
+**Task two:** you need to verify that a bar is correctly only giving
+beer to customers over 21. Which people do you need to check?
+
+    Person 1: you know to be 18
+    Person 2: you know to be 22
+    Person 3: holding a beer
+    Person 4: drinking club soda
+
+My intuition tells me the answer to task two, but throws up its hands
+at task one.
+
+
+
 ## Sorva: VPS in Introductory Programming Education
 
 ### Chapter 2
@@ -187,3 +230,84 @@ Some misconceptions (there's a great list on page 359 (the 367th page)):
 - Confusions with variable initialization
 - Confusions with recursion
 - OOP (many)
+
+
+### Chapter 4
+
+#### Mental Representations
+
+"Markman (1999, pp. 5-11) defines a *representation* as something
+that: 1) is about and captures aspects of a *represented world*; 2)
+exists in a *representing world* that is an abstraction of the
+represented world; 3) relies on rules that map elements in the
+represented world to elements in the representing world, and 4) is
+accompanied by *processes* that allow people or intelligent systems to
+make sense of the representation."
+
+**Interesting idea:** categorize mental representations in the same
+  bucket as, e.g., diagrams.
+
+**Memory:**
+
+    Sensory memory -> working memory <-> long-term memory
+       (< 1 sec)     (few secs; manip)   (long term storage)
+
+**Schema:** a mental structure that contains generic conceptual
+  knowledge. Specifically: reasonable ranges of attributes &
+  stereotypes.
+
+Schemas change by:
+
+- *Accretion:* add knowledge to existing schema
+- *Tuning:* tweak the range / typicality of a schema
+- *Restructuring:* create / delete / reorganize schemas
+
+**Script/Event Schema:** schema for a process, e.g. going to a
+sit-down restaurant.
+
+**Expertise:** Consensus is that experts are experts not because
+they are more intelligent, or because they have domain-independent
+problem solving skills, but because of schemas developed through
+long practice.
+
+**Plan:** A stereotypical structures in a program. E.g.: running-total,
+  sentinel-controlled-loop.
+
+**Disagreement:** In the rainfall problem, why are students expected
+  to merge all of their plans inside a `for` loop? These are intro
+  students: teach them to break the problem down into simpler steps.
+  1: truncate the list at 999, 2: filter out the negative numbers, 3:
+  take the average, 4: print it. Write helper functions for each step
+  as necessary. (The assumption I'm making is that sequential plan
+  composition is easier than merging plans together.)
+
+**Surprise:** "There is considerable empirical evidence that plans and
+plan schemas are the basic cognitive chunks used in designing and
+understanding programs."
+
+Rist: people use top-down, breadth-first development whenever they can
+(whenever the problem is familiar and they have a schema for it).
+When they can't, people program bottom-up, depth-first.
+
+**Readme:** Sajaniemi (2002) variable-related plan schemas.
+
+A common suggestion: we should teach plan schemas explicitly.
+
+#### Cognitive Load Theory
+
+> {Intrinstic, Germane, Extraneous} cognitive load
+
+**Expertise Reversal Effect:** Learning activities that are useful for
+novices become useless or even harmful to experts.
+
+Ways to increase *germane* learning:
+
+- *Variable Examples Effect:* give examples that differ on the surface
+- *Imagination Effect:* imagine "carrying out procedures related to
+worked-out examples". Experts only.
+- *4C/ID*: Puts it all together to design learning around cognitive
+load theory.
+
+Studies show: expert programmer commentaries are useful (compared to
+actually writing code).
+
