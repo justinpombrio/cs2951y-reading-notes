@@ -311,3 +311,12 @@ load theory.
 Studies show: expert programmer commentaries are useful (compared to
 actually writing code).
 
+
+#### Program Comprehension
+
+Program representation: program model & domain model (at least). (Both
+are problem specific.) Novices tend to learn program first, then
+domain (unless in OOP).
+
+Expert representation: hierarchical and well-grounded in the program
+source. Novices: less so.

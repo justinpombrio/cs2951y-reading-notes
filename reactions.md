@@ -96,3 +96,38 @@ the "sleeper" argument begins with "The issue came into focus via..."
 and ends at "The fact that two logical lines of argument yield
 contradictory answers tells us that the problem is not well-defined."
 (they don't).)
+
+
+# Day 3
+
+### An Interest
+
+(Knowledge Representation, by Markman)
+
+Why should we care what knowledge representation people use? The intro
+gives a *beautiful* example, where an rule described using letters and
+numbers is completely unintuitive but the same rule described using
+drinking age is completely intuitive. (Even to me.)
+
+
+### A Surprise
+
+"There is considerable empirical evidence that plans and
+plan schemas are the basic cognitive chunks used in designing and
+understanding programs."
+
+
+### A disagreement
+
+(Camels and Humps: a Retraction)
+
+Why was this teacher's reaction to a test that predicts programming
+performance and doesn't improve over time "these students can't
+learn to program" rather than "Sweet: maybe I can use this to figure
+out why my students aren't learning to program!"?
+
+"That document was very misleading and, because web documents persist,
+it continues to mislead to this day."
+
+That's because it's *hosted* on Dehnadi's *website*, which doesn't
+  mention the *retraction*.
