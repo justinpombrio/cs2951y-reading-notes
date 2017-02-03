@@ -6,4 +6,4 @@ function ddown
     done
 }
 
-ddown README.md & ddown reactions.md
+ddown README.md & ddown reactions.md & ddown notes.md

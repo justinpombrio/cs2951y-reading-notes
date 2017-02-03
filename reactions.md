@@ -3,9 +3,7 @@
 <h1>Class-ly Reactions<br/>
 (Interest, surprise, disagreement)</h1>
 
-(Justin Pombrio)
-
-[(Class notes are here.)](README.html)
+[(Class notes are here.)](notes.html)
 
 # Day 1
 
@@ -131,3 +129,29 @@ it continues to mislead to this day."
 
 That's because it's *hosted* on Dehnadi's *website*, which doesn't
   mention the *retraction*.
+
+
+
+# Day 4
+
+### An Interest
+
+"Researchers vary in how they describe the internal structure of
+mental models". Translation: no one has any idea how mental models are
+represented.
+
+### A Surprise
+
+I've always thought state was confusing. I'm glad it's not just me;
+it's been shown to almost universally confuse students too. (Even
+more-so than other topics.)
+
+### A Disagreement
+
+There was an example of a simple C-style for-loop, and a
+misinterpretation that violated De Kleer & Brown's robustness
+principle for mental representations. It was pointed out that the
+student's mental model described how for-loops were used in practice,
+but not what they really meant. I'd blame the loop more than the
+student, though; "for..in" captures practically all of the use-cases
+of "for(;;)", so why should a student learn the full meaning?
