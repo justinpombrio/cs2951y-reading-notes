@@ -414,11 +414,17 @@ near each other, the existence of a real Rome becomes irrelevant.
 
 #### Conceptual change theories deal with the dynamics of knowledge construction
 
-- Knowledge-as-theory (like scientific theories: add to existing
-  theory, or, given enough dissatisfaction with the current theory,
-  have a revolution and replace it).
-- Knowledge-as-elements (people learn primitive concepts, like
-  "bouncing", that are added to but never removed).
+- **Knowledge-as-theory:** Likens people's knowledge to scientific
+theories. Namely: coherent, allows "consistent application across
+contexts", and can be replaced with new theories if it's found
+lacking. Explains why misconceptions are hard to deal with:
+"conceptual revolutions" are hard. Conclusion: teachers should
+foster cognitive conflict that leads to conceptual revolution.
+- **Knowledge-as-elements:** Knowledge consists of primitive,
+independent, context-dependent notations like "bouncing". Being
+primitive, they do not require explanation. Suggests evolutionary
+rather than revolutionary change. (Recent research has shown that
+both happen.)
 
 Recent research mixes these (both evolution & revolutionary learning).
 
