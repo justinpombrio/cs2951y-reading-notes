@@ -354,3 +354,141 @@ capture the others, so we should focus on that.
 - Misconceptions galore
 - Inability to trace
 - Lack of notional machine
+
+
+
+### Chapter 6: Constructivism
+
+#### There are many constructivisms
+
+- Socialogical constructivism: societies
+- Social constructivism (incl. situated learning): community knowledge
+- Personal constructivism (incl. radical constructivism):
+  idiosyncratic construction
+
+#### Knowledge is an (inter-)subjective construction
+
+Uncontroversial contructivist belief: "We learn by combining prior
+knowledge with new experience".
+
+**Interesting:** This is a rather precise description of Bayesianism.
+
+Constructivists don't agree on how that combination happens, though.
+
+Focus on the "viability" of knowledge; how *useful* it is. "Thus,
+instead of claiming that knowledge is capable of representing a world
+outside of our experience, we would say [...] that knowledge is a tool
+within the realm of experience".
+
+Emphasize difficulty of transfer. (Indeed, I think it's hard to
+explain poor transfer if you think of knowledge as something that
+describes the world.)
+
+"These views on epistemology have led constructivists to oppose
+traditional education."
+
+I'm seeing a big gap between "viability is context dependent" and
+"only learners are allowed to decide when their knowledge is viable".
+
+#### But a wishy-wasy constructivist also acknowledges reality
+
+**Popper's Ontology** "Popper (1972), who suggested an ontology of
+three interacting 'worlds'. World1 is a world of physical
+objects. World2 consists of psychological, subjective experiences
+constructed by people of the other two worlds. World3, which is
+dependent on the first two worlds, contains the products of the human
+mind, such as art, mathematics, values, and science. The latter exists
+as a result of human activity and is maintained by it"
+
+"Ideally, experiential Romes should be reasonably close to the real
+one, with all roads leading at least to its near vicinity."
+
+I'm confused: once you acknowledge that the experiential Romes are
+near each other, the existence of a real Rome becomes irrelevant.
+
+#### For better learning, constructivisms tend to encourage collaboration in authentic contexts
+
+- Discovery learning (students discover solutions on their own)
+- Problem-based learning (messy real-world problems)
+- Inquery-based learning (similar)
+
+#### Conceptual change theories deal with the dynamics of knowledge construction
+
+- Knowledge-as-theory (like scientific theories: add to existing
+  theory, or, given enough dissatisfaction with the current theory,
+  have a revolution and replace it).
+- Knowledge-as-elements (people learn primitive concepts, like
+  "bouncing", that are added to but never removed).
+
+Recent research mixes these (both evolution & revolutionary learning).
+
+How much evidence is there for either of these theories?
+
+#### Situated learning theory sees learning as communal participation
+
+"In the situated view, all learning is situated, and useful results
+are only likely to be obtained by situating learning in the community
+of practice in which the skills that are learned are genuinely
+needed."
+
+I.e., college, as it is now (where skills are never "genuinely
+needed"), is "unlikely" to produce "useful results".
+
+#### Constructivisms are increasingly influential in computing education
+
+#### Constructivisms have drawn some heavy criticism
+
+##### Skirmish 1: Relativism
+
+"In a world of one's own construction, it is meaningless to care about
+others."
+
+If a moral relativist who would die for others, that's *meaningless*?
+
+##### Skirmish 2: Logical flaws: Foundationalism, Dualism, and the Element of Surprise
+
+Anti-foundationalism: is patently absurd for a theory that lays a
+foundation for thinking about knowledge, yes.
+
+Constructivism's inability to account for surprise: this hints at the
+heart of the matter.
+
+##### Skirmish 5: Ignoring Evidence
+
+This was my biggest gribe of this chapter. None of the recommendations
+actually *followed* from the philisophical underpinnings, and in fact
+this section argues that evidence suggests that most of them don't
+work well.
+
+
+#### Radical Constructivism
+
+Radical constructivism makes some silly statements. Adopting a couple
+reasonable definitions helps cut through them:
+
+"**Reality** is that which, when you stop believing it, doesn't go
+away." - Philip K. Dick
+
+"**Truth** is the correspondence between one's beliefs about reality
+and reality." - LessWrong Wiki
+
+- There is no objective *reality*?  Then everyone must be omniscient,
+  and never surprised by anything.
+- There is no *objective* reality? A lifetime of experience suggests
+  that my reality and yours correspond to one another. If there's a
+  laptop on the desk in my reality, then there is in yours too, and
+  neither of our beliefs can change that fact.
+- There is no true knowledge, only viable knowledge? Nonsense: you
+  have true knowledge about something iff you can make accurate
+  predictions about it. (This may actually *be* what constructivists
+  call "viable" knowledge. If so, that's fine. Let's give it its
+  common name: truth.)
+
+**An Antidote:**
+For anyone questioning the nature of truth, or feeling that it
+might be wishy-washy, I recommend
+[this story](http://yudkowsky.net/rational/the-simple-truth).
+
+This doesn't actually destroy all of the radical constructivist
+epistemological claims, but it might restore some common sense when
+discussing them...

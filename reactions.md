@@ -155,3 +155,35 @@ student's mental model described how for-loops were used in practice,
 but not what they really meant. I'd blame the loop more than the
 student, though; "for..in" captures practically all of the use-cases
 of "for(;;)", so why should a student learn the full meaning?
+
+
+# Day 5
+
+### An Interest
+
+A core *uncontroversial* constructivist belief is that:
+
+> We learn by combining prior knowledge with new experience.
+
+Interestingly, this is a rather precise description of Bayesianism.
+
+### A Surprise
+
+I recently came across a very clear description of truth in
+[this story](http://yudkowsky.net/rational/the-simple-truth).
+I'm surprised to have to use it.
+
+"**Reality** is that which, when you stop believing it, doesn't go
+away." - Philip K. Dick
+
+"**Truth** is the correspondence between one's beliefs about reality
+and reality." - LessWrong Wiki
+
+### A Disagreement
+
+Most of the constructivist beliefs about how best to teach seemed to
+be unsupported by evidence. If your new worldview makes inaccurate
+predictions...
+
+For instance, is there any evidence for knowledge-as-theory or
+knowledge-as-elements?
