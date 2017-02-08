@@ -1,8 +1,13 @@
 <link rel="stylesheet" href="github.css"/>
 
-<h1>Reading Notes for Brown CS 2951y:<br/>
-(Formal Semantics & Notational Machines)</h1>
+<h1>Formal Semantics & Notational Machine (Brown CSCI 2951y)</h1>
+
+(Justin Pombrio)
 
 [Class-ly reactions](reactions.html)
 
-[Class notes](notes.html)
+[Sorva](sorva.html)
+
+[Other Readings](notes.html)
+
+[Constructivism in Mystery Languages](constructivism-views.html)

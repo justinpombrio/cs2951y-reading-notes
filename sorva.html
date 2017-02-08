@@ -1,0 +1,376 @@
+<p><link rel="stylesheet" href="github.css"/></p>
+
+<h1>Formal Semantics & Notational Machine (Brown CSCI 2951y)</h1>
+
+<p>(Justin Pombrio)</p>
+
+<p><a href="reactions.html">Class-ly reactions</a></p>
+
+<p><a href="sorva.html">Sorva</a></p>
+
+<p><a href="notes.html">Other Readings</a></p>
+
+<p><a href="constructivism-views.html">Constructivism in Mystery Languages</a></p>
+<h1>Sorva: VPS in Introductory Programming Education</h1>
+
+<h2>Chapter 2</h2>
+
+<p><strong>Common Goal</strong> of intro CS: students should be "capable of developing a
+(small) program which solves a problem that has been expressed vaguely
+in non-programming terms."</p>
+
+<h3>Bloom Taxonomy</h3>
+
+<blockquote>
+  <p>Recall, Understand, Apply, Analyze, Evaluate, Create</p>
+</blockquote>
+
+<p>Is it meaningful? Yes: it has been validated, even in the context of
+CS ed (Whalley et. al 2006). Untrained academics apply it
+inconsistently, however.</p>
+
+<p>The Bloom Taxonomy suggests that the <em>common goal</em> is demanding.</p>
+
+<h3>SOLO Taxonomy</h3>
+
+<p>Unlike Bloom, SOLO aims to categorize student <em>responses</em>, rather than
+teacher <em>questions</em>.</p>
+
+<blockquote>
+  <p>Prestructural, Unistructural, Multistructural, Relational, Extended
+Abstract</p>
+</blockquote>
+
+<p>Or, from the original publication:</p>
+
+<blockquote>
+  <p>incoherent, linear, conventional, integrated, and metaphoric</p>
+</blockquote>
+
+<p>I thought these categories sounded hopelessly vague, until they were
+described in the context of a programming question (describe how this
+code works):</p>
+
+<ol>
+<li><em>Prestructural</em>: Lacks knowledge to answer the question (confused response)</li>
+<li><em>Unistructural</em>: Describes one part of the code</li>
+<li><em>Multistructural</em>: Line-by-line description</li>
+<li><em>Relational</em>: Summary of the code w.r.t. its purpose</li>
+</ol>
+
+<p>Like Bloom, SOLO suggests that intro CS has high expectations.</p>
+
+<p>Conclusion: CS educators may be systematically underestimating the
+difficulty of what they hope students will learn.</p>
+
+<p><strong>Question</strong>: Is the <em>common goal</em> realistic?</p>
+
+<h2>Chapter 3</h2>
+
+<p>Many students are not learning to write programs in CS1. Many are not
+even learning to <em>trace</em> programs (given a program, describe what
+happens as it runs).</p>
+
+<p>Coding is hard, so what's a good learning path?</p>
+
+<ul>
+<li>Learn to read before learning to write? Maybe not: Simon
+et. al 2009.</li>
+<li>Bloom's taxonomy? Predicts <em>difficulty</em>, but does not give a
+<em>learning path</em>.</li>
+<li><em>Trace</em> and <em>explain</em> first? This is the hypothesis of BRACElet.
+They give evidence that <em>basic</em> tracing and explanation are required
+for <em>basic</em> program writing.</li>
+</ul>
+
+<p>Some misconceptions (there's a great list on page 359 (the 367th page)):</p>
+
+<ul>
+<li>Superbug: give intentionality to the machine</li>
+<li>Conflate "let" with mathematical "="</li>
+<li>Confusions with variable initialization</li>
+<li>Confusions with recursion</li>
+<li>OOP (many)</li>
+</ul>
+
+<h2>Chapter 4</h2>
+
+<h3>Mental Representations</h3>
+
+<p>"Markman (1999, pp. 5-11) defines a <em>representation</em> as something
+that: 1) is about and captures aspects of a <em>represented world</em>; 2)
+exists in a <em>representing world</em> that is an abstraction of the
+represented world; 3) relies on rules that map elements in the
+represented world to elements in the representing world, and 4) is
+accompanied by <em>processes</em> that allow people or intelligent systems to
+make sense of the representation."</p>
+
+<p><strong>Interesting idea:</strong> categorize mental representations in the same
+  bucket as, e.g., diagrams.</p>
+
+<p><strong>Memory:</strong></p>
+
+<pre><code>Sensory memory -&gt; working memory &lt;-&gt; long-term memory
+   (&lt; 1 sec)     (few secs; manip)   (long term storage)
+</code></pre>
+
+<p><strong>Schema:</strong> a mental structure that contains generic conceptual
+  knowledge. Specifically: reasonable ranges of attributes &amp;
+  stereotypes.</p>
+
+<p>Schemas change by:</p>
+
+<ul>
+<li><em>Accretion:</em> add knowledge to existing schema</li>
+<li><em>Tuning:</em> tweak the range / typicality of a schema</li>
+<li><em>Restructuring:</em> create / delete / reorganize schemas</li>
+</ul>
+
+<p><strong>Script/Event Schema:</strong> schema for a process, e.g. going to a
+sit-down restaurant.</p>
+
+<p><strong>Expertise:</strong> Consensus is that experts are experts not because
+they are more intelligent, or because they have domain-independent
+problem solving skills, but because of schemas developed through
+long practice.</p>
+
+<p><strong>Plan:</strong> A stereotypical structures in a program. E.g.: running-total,
+  sentinel-controlled-loop.</p>
+
+<p><strong>Disagreement:</strong> In the rainfall problem, why are students expected
+  to merge all of their plans inside a <code>for</code> loop? These are intro
+  students: teach them to break the problem down into simpler steps.
+  1: truncate the list at 999, 2: filter out the negative numbers, 3:
+  take the average, 4: print it. Write helper functions for each step
+  as necessary. (The assumption I'm making is that sequential plan
+  composition is easier than merging plans together.)</p>
+
+<p><strong>Surprise:</strong> "There is considerable empirical evidence that plans and
+plan schemas are the basic cognitive chunks used in designing and
+understanding programs."</p>
+
+<p>Rist: people use top-down, breadth-first development whenever they can
+(whenever the problem is familiar and they have a schema for it).
+When they can't, people program bottom-up, depth-first.</p>
+
+<p><strong>Readme:</strong> Sajaniemi (2002) variable-related plan schemas.</p>
+
+<p>A common suggestion: we should teach plan schemas explicitly.</p>
+
+<h3>Cognitive Load Theory</h3>
+
+<blockquote>
+  <p>{Intrinstic, Germane, Extraneous} cognitive load</p>
+</blockquote>
+
+<p><strong>Expertise Reversal Effect:</strong> Learning activities that are useful for
+novices become useless or even harmful to experts.</p>
+
+<p>Ways to increase <em>germane</em> learning:</p>
+
+<ul>
+<li><em>Variable Examples Effect:</em> give examples that differ on the surface</li>
+<li><em>Imagination Effect:</em> imagine "carrying out procedures related to
+worked-out examples". Experts only.</li>
+<li><em>4C/ID</em>: Puts it all together to design learning around cognitive
+load theory.</li>
+</ul>
+
+<p>Studies show: expert programmer commentaries are useful (compared to
+actually writing code).</p>
+
+<h3>Program Comprehension</h3>
+
+<p>Program representation: program model &amp; domain model (at least). (Both
+are problem specific.) Novices tend to learn program first, then
+domain (unless in OOP).</p>
+
+<p>Expert representation: hierarchical and well-grounded in the program
+source. Novices: less so.</p>
+
+<h2>Chapter 5</h2>
+
+<p><em>Mental models</em>: Novices' mental models are often haphazard. Experts
+are much better. People tend to cling to their mental models.</p>
+
+<p>"Researchers vary in how they describe the internal structure of
+mental models."</p>
+
+<p>Transfer only works when (i) the knowledge is very well ingrained, or
+(ii) the two problems are (very) superficially similar.</p>
+
+<p><em>Robust mental representation</em>: De Kleer &amp; Brown (1981, 1983) give
+ criteria for what makes a good ("robust") mental representation. Main
+ criterion: <strong>No-function-in-structure principle:</strong> the rules that
+ govern a component of the system do not depend on the behavior of the
+ entire system.</p>
+
+<p><strong>Control vs. Monitor experiment:</strong> People were trained to control or
+  to monitor a system, and then swapped. Learning transferred from
+  controlling to monitoring, but not vice-versa.</p>
+
+<p><em>State</em> is the most confusing.</p>
+
+<p><em>Tracing:</em> Experts use symbolic tracing whenever possible (whatever
+ the value of x...), but novices have no choice but to use concrete
+ tracing (x should be 3, so...).</p>
+
+<p><strong>Conclusion:</strong> Students face 5 challenges. However, notional machines
+capture the others, so we should focus on that.</p>
+
+<ul>
+<li>High cognitive load</li>
+<li>Lack of schemas</li>
+<li>Misconceptions galore</li>
+<li>Inability to trace</li>
+<li>Lack of notional machine</li>
+</ul>
+
+<h2>Chapter 6: Constructivism</h2>
+
+<h3>There are many constructivisms</h3>
+
+<ul>
+<li>Socialogical constructivism: societies</li>
+<li>Social constructivism (incl. situated learning): community knowledge</li>
+<li>Personal constructivism (incl. radical constructivism):
+idiosyncratic construction</li>
+</ul>
+
+<h3>Knowledge is an (inter-)subjective construction</h3>
+
+<p>Uncontroversial contructivist belief: "We learn by combining prior
+knowledge with new experience".</p>
+
+<p><strong>Interesting:</strong> This is a rather precise description of Bayesianism.</p>
+
+<p>Constructivists don't agree on how that combination happens, though.</p>
+
+<p>Focus on the "viability" of knowledge; how <em>useful</em> it is. "Thus,
+instead of claiming that knowledge is capable of representing a world
+outside of our experience, we would say [...] that knowledge is a tool
+within the realm of experience".</p>
+
+<p>Emphasize difficulty of transfer. (Indeed, I think it's hard to
+explain poor transfer if you think of knowledge as something that
+describes the world.)</p>
+
+<p>"These views on epistemology have led constructivists to oppose
+traditional education."</p>
+
+<p>I'm seeing a big gap between "viability is context dependent" and
+"only learners are allowed to decide when their knowledge is viable".</p>
+
+<h3>But a wishy-wasy constructivist also acknowledges reality</h3>
+
+<p><strong>Popper's Ontology</strong> "Popper (1972), who suggested an ontology of
+three interacting 'worlds'. World1 is a world of physical
+objects. World2 consists of psychological, subjective experiences
+constructed by people of the other two worlds. World3, which is
+dependent on the first two worlds, contains the products of the human
+mind, such as art, mathematics, values, and science. The latter exists
+as a result of human activity and is maintained by it"</p>
+
+<p>"Ideally, experiential Romes should be reasonably close to the real
+one, with all roads leading at least to its near vicinity."</p>
+
+<p>I'm confused: once you acknowledge that the experiential Romes are
+near each other, the existence of a real Rome becomes irrelevant.</p>
+
+<h3>For better learning, constructivisms tend to encourage collaboration in authentic contexts</h3>
+
+<ul>
+<li>Discovery learning (students discover solutions on their own)</li>
+<li>Problem-based learning (messy real-world problems)</li>
+<li>Inquery-based learning (similar)</li>
+</ul>
+
+<h3>Conceptual change theories deal with the dynamics of knowledge construction</h3>
+
+<ul>
+<li><strong>Knowledge-as-theory:</strong> Likens people's knowledge to scientific
+theories. Namely: coherent, allows "consistent application across
+contexts", and can be replaced with new theories if it's found
+lacking. Explains why misconceptions are hard to deal with:
+"conceptual revolutions" are hard. Conclusion: teachers should
+foster cognitive conflict that leads to conceptual revolution.</li>
+<li><strong>Knowledge-as-elements:</strong> Knowledge consists of primitive,
+independent, context-dependent notations like "bouncing". Being
+primitive, they do not require explanation. Suggests evolutionary
+rather than revolutionary change. (Recent research has shown that
+both happen.)</li>
+</ul>
+
+<p>Recent research mixes these (both evolution &amp; revolutionary learning).</p>
+
+<p>How much evidence is there for either of these theories?</p>
+
+<h3>Situated learning theory sees learning as communal participation</h3>
+
+<p>"In the situated view, all learning is situated, and useful results
+are only likely to be obtained by situating learning in the community
+of practice in which the skills that are learned are genuinely
+needed."</p>
+
+<p>I.e., college, as it is now (where skills are never "genuinely
+needed"), is "unlikely" to produce "useful results".</p>
+
+<h3>Constructivisms are increasingly influential in computing education</h3>
+
+<h3>Constructivisms have drawn some heavy criticism</h3>
+
+<h4>Skirmish 1: Relativism</h4>
+
+<p>"In a world of one's own construction, it is meaningless to care about
+others."</p>
+
+<p>If a moral relativist who would die for others, that's <em>meaningless</em>?</p>
+
+<h4>Skirmish 2: Logical flaws: Foundationalism, Dualism, and the Element of Surprise</h4>
+
+<p>Anti-foundationalism: is patently absurd for a theory that lays a
+foundation for thinking about knowledge, yes.</p>
+
+<p>Constructivism's inability to account for surprise: this hints at the
+heart of the matter.</p>
+
+<h4>Skirmish 5: Ignoring Evidence</h4>
+
+<p>This was my biggest gribe of this chapter. None of the recommendations
+actually <em>followed</em> from the philisophical underpinnings, and in fact
+this section argues that evidence suggests that most of them don't
+work well.</p>
+
+<h3>Radical Constructivism</h3>
+
+<p>Radical constructivism makes some silly statements. Adopting a couple
+reasonable definitions helps cut through them:</p>
+
+<p>"<strong>Reality</strong> is that which, when you stop believing it, doesn't go
+away." - Philip K. Dick</p>
+
+<p>"<strong>Truth</strong> is the correspondence between one's beliefs about reality
+and reality." - LessWrong Wiki</p>
+
+<ul>
+<li>There is no objective <em>reality</em>?  Then everyone must be omniscient,
+and never surprised by anything.</li>
+<li>There is no <em>objective</em> reality? A lifetime of experience suggests
+that my reality and yours correspond to one another. If there's a
+laptop on the desk in my reality, then there is in yours too, and
+neither of our beliefs can change that fact.</li>
+<li>There is no true knowledge, only viable knowledge? Nonsense: you
+have true knowledge about something iff you can make accurate
+predictions about it. (This may actually <em>be</em> what constructivists
+call "viable" knowledge. If so, that's fine. Let's give it its
+common name: truth.)</li>
+</ul>
+
+<p><strong>An Antidote:</strong>
+For anyone questioning the nature of truth, or feeling that it
+might be wishy-washy, I recommend
+<a href="http://yudkowsky.net/rational/the-simple-truth">this story</a>.</p>
+
+<p>This doesn't actually destroy all of the radical constructivist
+epistemological claims, but it might restore some common sense when
+discussing them...</p>
