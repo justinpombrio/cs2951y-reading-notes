@@ -252,3 +252,25 @@ function. The *expert* solution was all mixed together instead of
 being decomposed into separate meaningful functions. I would recommend
 against hiring a developer that wrote code like that. This makes me
 sad.
+
+
+# Day 8
+
+### An Interest
+
+In the Izu paper, I liked the term "building block". It recognizes
+that the schemas that students learn (and could therefore possibly
+recall) are course specific.
+
+### A Disagreement
+
+Both of the papers seemed to revolve around loops, numbers, and arrays.
+Even people's names were represented with numbers. And the problems
+all seemed artificially geared toward this kind of data. How common is
+this in intro cs? (Izu section 2.2 suggests "quite".)
+
+### A Question
+
+Is seems odd to me that us total novices are commenting so much and
+asking so few questions. What would people think of doing "Interest,
+Disagreement, Question" instead of "Surprise, Interest, Disagreement"?
