@@ -187,3 +187,74 @@ predictions...
 
 For instance, is there any evidence for knowledge-as-theory or
 knowledge-as-elements?
+
+
+# Day 7
+
+### Interest
+
+    The interview technique for individual students should be transformed
+    into a class discussion technique for probing misconceptions and
+    stimulating interaction among the students to induce conceptual
+    change. When skillfully done, this is one of the most effective means
+    of dealing with misconceptions.
+
+I'm curious what this discussion would look like.
+
+### Surprise
+
+    The evidence that large Inventory gains are possible is now sufficient
+    for us to conclude that, for effective instruction, only the posttest
+    score counts.
+
+This is fantastic. It also sounds like a good metric for a concept
+inventory: everyone's bad at it, and the questions are simple, but
+they predict performance well.
+
+### Diagreement
+
+"Identifying Student Misconceptions of Programming"
+
+An example of the "Semantics to semantics" misconception says:
+
+    For example, when examining a list of Java variable definitions and
+    declarations whose interrelationships are unstated (see Appendix:
+    Problem 1), Student2 explains: “And then have the names of the songs
+    in here, which – but this would be stored in library, I'm assuming, or
+    in the library class. I don't know how they're linked together
+    exactly.”
+
+The paper says that "details about the relationship and operation of
+code samples [... were] neither given nor implied". But they were
+*strongly* implied by the prompt:
+
+    You are setting up a database of information about all the songs
+    you own.  Each song has certain information associated with it.
+    Diagram (or use pseudo-code) how this information would be stored
+    in memory:
+
+"This information" is clearly referring to each song's "certain
+information", which is also the information in the database that *you*
+are setting up. The prompt asks how this information *would* be stored
+in memory. In the database that *you* are setting up.
+
+And you're supposed to think that there are no relationships between
+the code samples?
+
+In another example:
+    
+    In another example, with a different problem (see Appendix: Problem
+    2b), Student3 makes incorrect assumptions about connections between
+    variables to the extent that the student makes a mistake concerning
+    the types of the variables. As a result, the student places Objects of
+    different types in an array whose type matches none of them: “And so
+    because there’s two arrays, cheese and meats, uh, all those turkey and
+    ham and roast beef are gonna be sorted into the meats array.”
+
+That's what I assumed too. Presumably those are subclasses of Meat;
+otherwise why is there an array of Meats? What good is a Meat array if
+you can't put Turkey in it?
+
+These are literally the worst programming question prompts I've ever
+seen, and the authors' aggressive interpretation of student responses
+makes me question the other misconceptions they've found.
