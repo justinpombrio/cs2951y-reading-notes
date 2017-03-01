@@ -339,3 +339,54 @@ might be wishy-washy, I recommend
 This doesn't actually destroy all of the radical constructivist
 epistemological claims, but it might restore some common sense when
 discussing them...
+
+
+## Chapter 7: Phenomenology
+
+### What is Phenomenology?
+
+    Our world is a world which is always understood in one way or in
+    another, it can not be defined without someone defining it. On the
+    other hand, we can not be without our world. (Marton, 2000,
+    p. 115)
+    
+&nbsp;
+    
+    We should explore [...] what the world we experience is like, on
+    the one hand, and what our way of experiencing the world is like,
+    on the other hand. And of course: these are not two things. They
+    are one. (Marton, 2000, p. 115)
+
+In practice, it seems to be about qualitative studies of students that
+ask them to describe things they've learned about.
+
+*Example: How is an object experienced?*
+
+- **A**: As a piece of code.
+
+- **B**: As A & as something active in the code.
+
+- **C**: As A & B & as a model of some real-world phenomenon.
+
+### What does it say for about teaching?
+
+**Variation Theory:** "The assumption is that if we want to make the
+student think in a certain way about something, it should be useful to
+know what other ways there are to think about it."
+
+^ Seems closely related to concept inventories. The examples look
+similar as well, if coarser.
+
+Teachers should set up situations that emphasize critical variation.
+(E.g., compare & contrast.) However, the best methods of teaching are
+completely dependent on what's being taught.
+
+### What does it say about CER?
+
+Here's an interesting result. Students describing recusrion fell into
+three categories: "A) as a construct in a programming language B) as a
+means of bringing about repetition, and C) conceptually as
+self-reference that enables a function to make use of itself".
+
+**Question:** Does leading students into certain ways of experiencing
+things improve learning outcomes?

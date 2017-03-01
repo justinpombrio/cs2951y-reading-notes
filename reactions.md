@@ -188,8 +188,95 @@ predictions...
 For instance, is there any evidence for knowledge-as-theory or
 knowledge-as-elements?
 
+# Day 6
+
+### An Interest
+
+Here's an interesting result. Students describing recusrion fell into
+three categories: "A) as a construct in a programming language B) as a
+means of bringing about repetition, and C) conceptually as
+self-reference that enables a function to make use of itself".
+
+
+### A Surprise
+
+The definition of variation theory:
+
+**Variation Theory:** "The assumption is that if we want to make the
+student think in a certain way about something, it should be useful to
+know what other ways there are to think about it."
+
+Seems closely related to concept inventories. The examples look
+similar as well, if coarser.
+
+
+### A Disagreement
+
+**Question:** Does leading students into certain ways of experiencing
+things improve learning outcomes? If not, why should we pay any
+attention to Phenomenologic research (beyond curiosity)?
+
+
+### A Note
+
+Chapters 6 and 7 have scattered statements that seem obviously false,
+which makes me think I don't understand how the quoted authors are
+using words. I also don't understand the philisophical differences
+between Phenomenologists and Constructivists (though what they *do* is
+quite distinct).
+
 
 # Day 7
+
+### An Interest
+
+Muller's paper gives 7 examples of algorithmic patterns. Five of them
+are commonly library functions.
+
+(The list: `len`, `fold`, `exists`, `all`, `map`(?). Plus
+num-to-digits (not common) and "extreme value computation" (what is
+that?).
+
+### A Surprise
+
+I didn't expect the the students in Castro's study to perform *quite*
+so badly. Many students had the idea to write helper functions, and
+most used htdp templates. Did any of them actually write a correct
+helper function, though?
+
+### A Disagreement
+
+In Muller's paper, they used POI to successfully teach students to
+decompose problems and then had them glom them all together into one
+function. The *expert* solution was all mixed together instead of
+being decomposed into separate meaningful functions. I would recommend
+against hiring a developer that wrote code like that. This makes me
+sad.
+
+
+# Day 8
+
+### An Interest
+
+In the Izu paper, I liked the term "building block". It recognizes
+that the schemas that students learn (and could therefore possibly
+recall) are course specific.
+
+### A Disagreement
+
+Both of the papers seemed to revolve around loops, numbers, and arrays.
+Even people's names were represented with numbers. And the problems
+all seemed artificially geared toward this kind of data. How common is
+this in intro cs? (Izu section 2.2 suggests "quite".)
+
+### A Question
+
+Is seems odd to me that us total novices are commenting so much and
+asking so few questions. What would people think of doing "Interest,
+Disagreement, Question" instead of "Surprise, Interest, Disagreement"?
+
+
+# 1-3-17
 
 ### Interest
 
@@ -258,3 +345,4 @@ you can't put Turkey in it?
 These are literally the worst programming question prompts I've ever
 seen, and the authors' aggressive interpretation of student responses
 makes me question the other misconceptions they've found.
+
