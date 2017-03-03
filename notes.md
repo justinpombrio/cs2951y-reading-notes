@@ -203,3 +203,17 @@ job"), plus "syntactic simplicity" (well-named, uniform instructions).
 Notional machines: slot box, SOLO (limited database), Self Simulation
 on a Microprocessor (small instruction set), ELogo (incl procedure
 definition)
+
+## Logo
+
+"since, for recursion, evidence for how control is passed in Logo
+(i.e., which line is to be executed next) is not discoverable in the
+surface structure of the language."
+
+Didn't help planning. (Not that surprising: transfer is generally
+rare.)
+
+"But we have deep doubts, based on a series of empirical studies over
+an 18-month period, that the Logo ideal is attainable with its
+discovery-learning pedagogy."
+
