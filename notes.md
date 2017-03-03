@@ -155,3 +155,51 @@ beer to customers over 21. Which people do you need to check?
 
 My intuition tells me the answer to task two, but throws up its hands
 at task one.
+
+
+## Boulay: Difficulties Learning to Program
+
+Treating the computer as a highly limited rational entity
+
+Programming keywords unrelated to English usage
+
+### Assignment, Variables, and Arrays
+
+"After all, most boxes hold more than one thing."
+
+"After all, if one has not put anything into a box, it's empty, which
+is sort of like zero."
+
+"The policy of using meaningful (to the human) variable names can
+suggest that the names are meaningful to the computer as well"
+
+Arrays hard: array vs. subscript vs. elements.
+
+### Interaction Errors
+
+"They expected that the loop could terminate at the very instant that
+the controlling condition changed value."
+
+Semicolons.
+
+"First is the need to present the beginner with some model or
+description of the machine she or he is learning to operate via the
+given programming language."
+
+
+## Boulay: The black box inside the glass box: presenting computing concepts to novices
+
+A notional machine should be: *simple* & *visible* ("methods should
+be provided for the novice to observe certain of its workings in
+action")
+
+**Simplicity**: "logical simplicity" ("the tools are suited for the
+job"), plus "syntactic simplicity" (well-named, uniform instructions).
+
+**Visibility**: Should be possible to see parts of the notional
+  machine as you run your program. Tracing & error messages should use
+  the terminology you've been taught.
+
+Notional machines: slot box, SOLO (limited database), Self Simulation
+on a Microprocessor (small instruction set), ELogo (incl procedure
+definition)

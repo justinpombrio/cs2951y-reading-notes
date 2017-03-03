@@ -346,3 +346,32 @@ These are literally the worst programming question prompts I've ever
 seen, and the authors' aggressive interpretation of student responses
 makes me question the other misconceptions they've found.
 
+# 1-5-17
+
+### Interest
+
+Boulay points out some big issues with putting variables in boxes.
+
+"After all, most boxes hold more than one thing."
+
+"After all, if one has not put anything into a box, it's empty, which
+is sort of like zero."
+
+These problems were known so early; why do we still go about it?
+
+
+### Surprise
+
+I hadn't thought much about the fact that a notional machine should be
+inspectible, but of course it should! And the language you're using
+should use the same terminology you're being taught, otherwise it
+looks like the teacher's lying: they've told you one thing, but that
+error message says something different.
+
+It's *much* easier to learn about something you interact with a lot.
+
+
+### Questions
+
+I'm still interested in the fate of LOGO. Where can I find the
+original study results?
