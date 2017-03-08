@@ -221,3 +221,66 @@ job"), plus "syntactic simplicity" (well-named, uniform instructions).</p>
 <p>Notional machines: slot box, SOLO (limited database), Self Simulation
 on a Microprocessor (small instruction set), ELogo (incl procedure
 definition)</p>
+
+<h2>Logo</h2>
+
+<p>"since, for recursion, evidence for how control is passed in Logo
+(i.e., which line is to be executed next) is not discoverable in the
+surface structure of the language."</p>
+
+<p>Didn't help planning. (Not that surprising: transfer is generally
+rare.)</p>
+
+<p>"But we have deep doubts, based on a series of empirical studies over
+an 18-month period, that the Logo ideal is attainable with its
+discovery-learning pedagogy."</p>
+
+<h2>Htdp</h2>
+
+<p>Is <code>local</code> just a way to group some definitions together? It seems to
+be working around a purely <em>syntactic</em> restriction: why not just lift
+that restriction? And what purpose does it serve in Racket, where
+there is no such restriction?</p>
+
+<pre><code>This section introduces local, a simple construct for organizing
+collections of functions. With local, a programmer can group
+function definitions that belong together so that readers
+immediately recognize the connection between the functions.
+</code></pre>
+
+<p>Ah, it would be messy to change the grammar of the entire language,
+and have complicated reduction rules for every syntactic form.
+Instead, there's just one complicated reduction rule, for <code>local</code>.</p>
+
+<p>The <code>local</code> reduction rule is a mess. It uses variable renaming
+instead of shadowing (which is simpler IMHO), and the introduced
+definitions pile up! Ironically, it's also the first non-local
+reduction rule.</p>
+
+<pre><code>def-1 ... def-n
+E[(local ((define (f-1 x) exp-1) ... (define (f-n x) exp-n)) exp)]
+=
+def-1 ... def-n (define (f-1' x) exp-1') ... (define (f-n' x) exp-n')
+E[exp']
+</code></pre>
+
+<p>Is there a better way to express local definitions?</p>
+
+<h4>Pragmatics of local, Part 1</h4>
+
+<p>Mututally recursive helper functions.</p>
+
+<h4>Pragmatics of local, Part 2</h4>
+
+<p>Just a <code>let</code>.</p>
+
+<h4>Pragmatics of local, Part 3</h4>
+
+<p>More let.</p>
+
+<h4>Lexical Scope and Block Structure</h4>
+
+<p>None too surprising. Draws arrows: good. Draws boxes: good.</p>
+
+<p>Doesn't give a full notional machine. For instance, it doesn't predict
+that in <code>(define x y) (define y 3)</code>, <code>y</code> is unbound.</p>

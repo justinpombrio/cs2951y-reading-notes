@@ -217,3 +217,50 @@ rare.)
 an 18-month period, that the Logo ideal is attainable with its
 discovery-learning pedagogy."
 
+## Htdp
+
+Is `local` just a way to group some definitions together? It seems to
+be working around a purely *syntactic* restriction: why not just lift
+that restriction? And what purpose does it serve in Racket, where
+there is no such restriction?
+
+    This section introduces local, a simple construct for organizing
+    collections of functions. With local, a programmer can group
+    function definitions that belong together so that readers
+    immediately recognize the connection between the functions.
+
+Ah, it would be messy to change the grammar of the entire language,
+and have complicated reduction rules for every syntactic form.
+Instead, there's just one complicated reduction rule, for `local`.
+
+The `local` reduction rule is a mess. It uses variable renaming
+instead of shadowing (which is simpler IMHO), and the introduced
+definitions pile up! Ironically, it's also the first non-local
+reduction rule.
+
+    def-1 ... def-n
+    E[(local ((define (f-1 x) exp-1) ... (define (f-n x) exp-n)) exp)]
+    =
+    def-1 ... def-n (define (f-1' x) exp-1') ... (define (f-n' x) exp-n')
+    E[exp']
+
+Is there a better way to express local definitions?
+
+#### Pragmatics of local, Part 1
+
+Mututally recursive helper functions.
+
+#### Pragmatics of local, Part 2
+
+Just a `let`.
+
+#### Pragmatics of local, Part 3
+
+More let.
+
+#### Lexical Scope and Block Structure
+
+None too surprising. Draws arrows: good. Draws boxes: good.
+
+Doesn't give a full notional machine. For instance, it doesn't predict
+that in `(define x y) (define y 3)`, `y` is unbound.
