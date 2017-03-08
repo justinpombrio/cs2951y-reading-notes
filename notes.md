@@ -217,3 +217,61 @@ rare.)
 an 18-month period, that the Logo ideal is attainable with its
 discovery-learning pedagogy."
 
+## Htdp
+
+Topics: symbols, bools, define var/func, cond, define-struct!
+
+Evaluation is described via equations with variables.
+
+The environment is introduced implicitly:
+
+    Whenever we evaluate an expression, every occurrence of the
+    defined variable is replaced by its value.
+
+A confusing sentence:
+
+    These keywords [define, cond, else] have no meaning. Their role
+    resembles that of punctuation marks, especially that of commas and
+    semicolons, in English writing; they help programmers distinguish
+    one sentence from another.
+
+Beginners don't read error messages.
+
+Think they broke it.
+
+Jack hypothesis: student reactions to errors in general is to ask for help.
+
+Preston idea: teach it to them.
+
+Clean semantics for top-level hard.
+letrec? can't mix funcs and defns
+styles:
+  Haskell (lazy)
+  Pyret  (grouped)
+  Python (inorder?)
+
+cons a value
+
+Felleison notional machine: every step is a valid program!
+
+
+
+
+
+'posn ('x 'y) define-struct
+-> make-posn, posn?, posn-x, posn-y
+
+3 even? (2 /)
+  (odd? (3 * 1 +) if)
+  ifte
+
+3 ((even? (2 /)) (odd? (3 * 1 +))) cond
+3 even? (2 /) (((odd? (3 * 1 +))) cond) ifte
+3 false (2 /) (((odd? (3 * 1 +))) cond) ifte
+3 ((odd? (3 * 1 +))) cond
+3 odd? (3 * 1 +) (() cond) ifte
+3 true (3 * 1 +) (() cond) ifte
+3 3 * 1 +
+10
+
+
