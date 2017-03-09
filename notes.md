@@ -334,6 +334,10 @@ Cleverly, the notional machine does not allow set! on function
 parameters. "A set!-expression must occur in the lexical scope of a
 define that introduces the set!-expression's left-hand side."
 
+*Question:* how does it get away with only having an "environment", but
+no "heap"? *Answer:* there is no value mutation, so values can be
+conflated with their locations.
+
 Question: does the 'ouch' program witness the difference between
 recursive function definitions and using the y-combinator?
 
