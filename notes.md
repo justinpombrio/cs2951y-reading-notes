@@ -323,6 +323,67 @@ doesn't. That's what `shared` is for.
 
 ### Htdp: set!
 
+To model set!:
+
+- Rewrite both definitions and expression (not just expression)
+- Fix evaluation order (wasn't it fixed before because of errors?)
+- set! non-locally modifies its definition
+- Environment-based semantics (why'd you wait so long?)
+
 Question: does the 'ouch' program witness the difference between
 recursive function definitions and using the y-combinator?
 
+Answer: it does!
+
+    ;; strict y combinator, with test case
+    
+    (define y
+      (lambda (f)
+        ((lambda (x) (f (lambda (v) ((x x) v))))
+         (lambda (x) (f (lambda (v) ((x x) v)))))))
+    
+    (define-syntax-rule
+      (fix (f) body)
+      (y (lambda (f) body)))
+    
+    (define !
+      (fix (!)
+           (lambda (n)
+             (if (eq? n 0)
+                 1
+                 (* n (! (- n 1)))))))
+    
+    (display "Y-combinator test: 5! = ")
+    (print (! 5)) ; 120
+    (newline)
+    
+    ;; 'ouch program using 'define'
+    
+    (define f1
+      (lambda (x)
+        (cond
+         [(zero? x) 'done]
+         [else (f1 (- x 1))])))
+    
+    (define g1 f1)
+    
+    (set! f1 (lambda (x) 'ouch))
+    (display "Standard ouch (using 'define'): ")
+    (print (g1 1)) ; 'ouch
+    (newline)
+    
+    ;; 'ouch program using y-combinator
+    
+    (define f2
+      (fix (f2)
+           (lambda (x)
+             (cond
+              [(zero? x) 'done]
+              [else (f2 (- x 1))]))))
+    
+    (define g2 f2)
+    
+    (set! f2 (lambda (x) 'ouch))
+    (display "Y-combinator ouch: ")
+    (print (g2 1)) ; 'done
+    (newline)
