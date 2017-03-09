@@ -254,24 +254,75 @@ cons a value
 
 Felleison notional machine: every step is a valid program!
 
+### Htdp: local
+
+Is `local` just a way to group some definitions together? It seems to
+be working around a purely *syntactic* restriction: why not just lift
+that restriction? And what purpose does it serve in Racket, where
+there is no such restriction?
+
+    This section introduces local, a simple construct for organizing
+    collections of functions. With local, a programmer can group
+    function definitions that belong together so that readers
+    immediately recognize the connection between the functions.
+
+Ah, it would be messy to change the grammar of the entire language,
+and have complicated reduction rules for every syntactic form.
+Instead, there's just one complicated reduction rule, for `local`.
+
+The `local` reduction rule is a mess. It uses variable renaming
+instead of shadowing (which is simpler IMHO), and the introduced
+definitions pile up! Ironically, it's also the first non-local
+reduction rule.
+
+    def-1 ... def-n
+    E[(local ((define (f-1 x) exp-1) ... (define (f-n x) exp-n)) exp)]
+    =
+    def-1 ... def-n (define (f-1' x) exp-1') ... (define (f-n' x) exp-n')
+    E[exp']
+
+Is there a better way to express local definitions?
+
+#### Pragmatics of local, Part 1
+
+Mututally recursive helper functions.
+
+#### Pragmatics of local, Part 2
+
+Just a `let`.
+
+#### Pragmatics of local, Part 3
+
+More let.
+
+#### Lexical Scope and Block Structure
+
+None too surprising. Draws arrows: good. Draws boxes: good.
+
+Doesn't give a full notional machine. For instance, it doesn't predict
+that in `(define x y) (define y 3)`, `y` is unbound.
+
+**Stepper Weakness:** it gives the wrong cost model: it shows copying
+when there isn't! Why? Students come in knowing algebra & algebraic
+substitution. Some alternatives include (i) drawing arrows to denote
+sharing (which isn't a syntactic theory), or (ii) Matthias' clever
+letrec (`shared`).
+
+**Stepper Weakness:** it doesn't preserve indentation.
+
+Question: How does local handle simple heap cycles? Answer: it
+doesn't. That's what `shared` is for.
+
+**My Homework:** Present evaluation contexts.
+
+    LC + values + set!
+    Grammar as way to identify redex.
+    Original Grammar -> Eval context grammar
+    What is left -> what we have to provide reductions for.
 
 
+### Htdp: set!
 
-
-'posn ('x 'y) define-struct
--> make-posn, posn?, posn-x, posn-y
-
-3 even? (2 /)
-  (odd? (3 * 1 +) if)
-  ifte
-
-3 ((even? (2 /)) (odd? (3 * 1 +))) cond
-3 even? (2 /) (((odd? (3 * 1 +))) cond) ifte
-3 false (2 /) (((odd? (3 * 1 +))) cond) ifte
-3 ((odd? (3 * 1 +))) cond
-3 odd? (3 * 1 +) (() cond) ifte
-3 true (3 * 1 +) (() cond) ifte
-3 3 * 1 +
-10
-
+Question: does the 'ouch' program witness the difference between
+recursive function definitions and using the y-combinator?
 

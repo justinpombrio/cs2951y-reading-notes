@@ -221,3 +221,129 @@ job"), plus "syntactic simplicity" (well-named, uniform instructions).</p>
 <p>Notional machines: slot box, SOLO (limited database), Self Simulation
 on a Microprocessor (small instruction set), ELogo (incl procedure
 definition)</p>
+
+<h2>Logo</h2>
+
+<p>"since, for recursion, evidence for how control is passed in Logo
+(i.e., which line is to be executed next) is not discoverable in the
+surface structure of the language."</p>
+
+<p>Didn't help planning. (Not that surprising: transfer is generally
+rare.)</p>
+
+<p>"But we have deep doubts, based on a series of empirical studies over
+an 18-month period, that the Logo ideal is attainable with its
+discovery-learning pedagogy."</p>
+
+<h2>Htdp</h2>
+
+<p>Topics: symbols, bools, define var/func, cond, define-struct!</p>
+
+<p>Evaluation is described via equations with variables.</p>
+
+<p>The environment is introduced implicitly:</p>
+
+<pre><code>Whenever we evaluate an expression, every occurrence of the
+defined variable is replaced by its value.
+</code></pre>
+
+<p>A confusing sentence:</p>
+
+<pre><code>These keywords [define, cond, else] have no meaning. Their role
+resembles that of punctuation marks, especially that of commas and
+semicolons, in English writing; they help programmers distinguish
+one sentence from another.
+</code></pre>
+
+<p>Beginners don't read error messages.</p>
+
+<p>Think they broke it.</p>
+
+<p>Jack hypothesis: student reactions to errors in general is to ask for help.</p>
+
+<p>Preston idea: teach it to them.</p>
+
+<p>Clean semantics for top-level hard.
+letrec? can't mix funcs and defns
+styles:
+  Haskell (lazy)
+  Pyret  (grouped)
+  Python (inorder?)</p>
+
+<p>cons a value</p>
+
+<p>Felleison notional machine: every step is a valid program!</p>
+
+<h3>Htdp: local</h3>
+
+<p>Is <code>local</code> just a way to group some definitions together? It seems to
+be working around a purely <em>syntactic</em> restriction: why not just lift
+that restriction? And what purpose does it serve in Racket, where
+there is no such restriction?</p>
+
+<pre><code>This section introduces local, a simple construct for organizing
+collections of functions. With local, a programmer can group
+function definitions that belong together so that readers
+immediately recognize the connection between the functions.
+</code></pre>
+
+<p>Ah, it would be messy to change the grammar of the entire language,
+and have complicated reduction rules for every syntactic form.
+Instead, there's just one complicated reduction rule, for <code>local</code>.</p>
+
+<p>The <code>local</code> reduction rule is a mess. It uses variable renaming
+instead of shadowing (which is simpler IMHO), and the introduced
+definitions pile up! Ironically, it's also the first non-local
+reduction rule.</p>
+
+<pre><code>def-1 ... def-n
+E[(local ((define (f-1 x) exp-1) ... (define (f-n x) exp-n)) exp)]
+=
+def-1 ... def-n (define (f-1' x) exp-1') ... (define (f-n' x) exp-n')
+E[exp']
+</code></pre>
+
+<p>Is there a better way to express local definitions?</p>
+
+<h4>Pragmatics of local, Part 1</h4>
+
+<p>Mututally recursive helper functions.</p>
+
+<h4>Pragmatics of local, Part 2</h4>
+
+<p>Just a <code>let</code>.</p>
+
+<h4>Pragmatics of local, Part 3</h4>
+
+<p>More let.</p>
+
+<h4>Lexical Scope and Block Structure</h4>
+
+<p>None too surprising. Draws arrows: good. Draws boxes: good.</p>
+
+<p>Doesn't give a full notional machine. For instance, it doesn't predict
+that in <code>(define x y) (define y 3)</code>, <code>y</code> is unbound.</p>
+
+<p><strong>Stepper Weakness:</strong> it gives the wrong cost model: it shows copying
+when there isn't! Why? Students come in knowing algebra &amp; algebraic
+substitution. Some alternatives include (i) drawing arrows to denote
+sharing (which isn't a syntactic theory), or (ii) Matthias' clever
+letrec (<code>shared</code>).</p>
+
+<p><strong>Stepper Weakness:</strong> it doesn't preserve indentation.</p>
+
+<p>Question: How does local handle simple heap cycles? Answer: it
+doesn't. That's what <code>shared</code> is for.</p>
+
+<p><strong>My Homework:</strong> Present evaluation contexts.</p>
+
+<pre><code>LC + values + set!
+Grammar as way to identify redex.
+Original Grammar -&gt; Eval context grammar
+What is left -&gt; what we have to provide reductions for.
+</code></pre>
+
+<h3>Htdp: set!</h3>
+
+<p>Question: does the 'ouch' program witness the difference between
+recursive function definitions and using the y-combinator?</p>
