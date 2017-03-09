@@ -330,6 +330,10 @@ To model set!:
 - set! non-locally modifies its definition
 - Environment-based semantics (why'd you wait so long?)
 
+Cleverly, the notional machine does not allow set! on function
+parameters. "A set!-expression must occur in the lexical scope of a
+define that introduces the set!-expression's left-hand side."
+
 Question: does the 'ouch' program witness the difference between
 recursive function definitions and using the y-combinator?
 
