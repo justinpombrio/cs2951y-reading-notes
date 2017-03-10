@@ -320,6 +320,12 @@ doesn't. That's what `shared` is for.
     Original Grammar -> Eval context grammar
     What is left -> what we have to provide reductions for.
 
+    From Turbak & Gifford:
+    - redexes: (+ N N)
+    - reduction relation: (+ N1 N2) ~> N1+N2
+    - evaluation contexts
+    - transition relation: E(R) -> E(R') when R ~> R'
+
 
 ### Htdp: set!
 
