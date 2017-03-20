@@ -375,3 +375,50 @@ It's *much* easier to learn about something you interact with a lot.
 
 I'm still interested in the fate of LOGO. Where can I find the
 original study results?
+
+
+# 1-20-17
+
+### Surprise
+
+I realized when reading Kohn's variable paper that most of the
+misconceptions discussed were *eminently* reasonable ways for a
+language to work, and in fact almost all of them appear in existing
+languages:
+
+- Assignments are symmetric / are equations (Mathematica)
+- `max` automatically holds the max (This is the sole exception: we'd
+  sure like the computer to program for us, but not even program
+  synthesis tries to interpret variable names.)
+- Vars are empty after access (This happens with channels and with
+  linear types)
+- Vars can hold more than one value or have a memory (I'm not thinking
+  of a concrete example where a language does this, but, e.g., having
+  queues of messages is common.)
+- Vars hold unevaluated expressions (Haskell)
+- Vars are linked together (Aliasing: languages used to do this)
+
+### Interest
+
+I liked Kohn's conclusion:
+
+    Applied to our case, it might simply not be enough to use
+    visualizations and show students how the notional machine
+    works. *In order to build viable mental models, students
+    must be prompted to interactively work with the notional
+    machine and recognize differences from their current mental
+    models.* A possible way to achieve this interaction could be
+    to teach students how to trace a program with paper and
+    pencil, and check the obtained results. [emphasis mine]
+
+I can't help but think of mystery languages: they could reify
+student's possible misconceptions. I'm picturing a mystery language
+per known misconceptions, and asking CS1 students to explain their
+differences. This would force them to very directly confront the
+relevant distinctions. It might also give them hypothetical-language
+envy: "Why can't I use the language that solved equations?", which
+isn't necessarily a bad thing.
+
+On the other hand, this could also be a terrible idea: after all, we
+don't teach physics by explaining in detail 10 ways the world could
+work, and then tossing 9 of them out.
