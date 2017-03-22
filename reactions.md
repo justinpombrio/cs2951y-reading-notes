@@ -422,3 +422,31 @@ isn't necessarily a bad thing.
 On the other hand, this could also be a terrible idea: after all, we
 don't teach physics by explaining in detail 10 ways the world could
 work, and then tossing 9 of them out.
+
+
+# 1-22-17
+
+### Disagreement
+
+In the Pascal averaging example, where the student was supposedly
+"believing that the programming language knows more about her
+intentions then it possibly can", I feel like she was answering the
+question (weather "1a" and "2a" were the 'same kind of statement')
+*semantically*, but being judged assuming it was meant *syntactically*.
+I.e., she answered weather you should think of them as the same kind
+of statement from a program design standpoint, which seems like a
+reasonable enough thing to do.
+
+### Question
+
+I wonder weather the "superbug" has gotten better over time, as
+students now come in having interacted with lots of deterministic
+software? Although, even if it has, it will get worse again.
+Gmail knows when you meant to send an attachment, and will remind you
+about it.
+
+### Interesting
+
+Again, while they are presented as misconceptions, a lot of the things
+that students think the computer will do would---excluding the
+infeasible ones---would make for a reasonable programming language.
