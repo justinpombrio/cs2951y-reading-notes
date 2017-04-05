@@ -450,3 +450,89 @@ about it.
 Again, while they are presented as misconceptions, a lot of the things
 that students think the computer will do would---excluding the
 infeasible ones---would make for a reasonable programming language.
+
+# 3-23-17
+
+### Question
+
+Page 42: how were metacognitive skills measured?
+
+### Disagreement
+
+Most of the results seem explainable by "everyone rates themselves as
+60th percentile until proven otherwise".
+
+### Interest
+
+The paper showed a couple notable things:
+
+- Predictions 1&2: the incompetant can't judge their own or other
+  people's ability well (not terribly surprising).
+- Prediction 3: the incompetant don't learn anything from viewing
+  others' answers, but the competent do.
+- Prediction 4: training helps self-assesment.
+
+Big warning: notice that most of the data is insignificant. E.g.,
+don't read too much into the flow of the line graphs.
+
+
+## 4-3-17
+
+### Disagreement: Garner's Code Completion
+
+I don't see an actual argument that *program completion* is a good way
+to teach. The relevent parts of the approach seem to be (i) preventing
+students from copy-pasting, and (ii) debugging support. Also, where
+did the story of how the student learned to program come from? It was
+filled with what appear to be gueses about his state of mind.
+
+### Surprise: Denny et al. on Parsons Problems
+
+This paper argues against code tracing. Student: "In the real world,
+you wouldn't trace the numbers, you'd run the program."
+
+Come to think of it, I'm not sure how I reason about programs as I
+write them, but I'm pretty sure it doesn't look like code tracing. The
+students don't seem to think it's a natural thing to do, either. Is
+there another way to teach reasoning about programs? Perhaps it looks
+more like plan composition, but reading rather than writing?
+
+### Question: Parson on Parsons Problems
+
+A lot of these focused on "activity diagrams" (i.e., flowcharts?).
+This seems like an approach to teaching state, which is known to be
+very difficult to teach: does it work at all?
+
+
+
+### Parson's Programming Puzzles
+
+This addresses a concern I've had about Htdp: it starts off slowly and
+in rote. Do students find it boring? (OK: reading further, it doesn't
+help teach syntax at all.)
+
+This approach has the advantage of teaching *parts* of programming,
+reducing the overwhelming number of things beginning students need to
+deal with at once (syntax, planning, debugging).
+
+14/17: provide more detail about the errors made.
+
+Is there knowledge about how useful "activity diagrams" (flowcharts)
+are for understanding state?
+
+### Evaluating a New Exam Question: Parsons Problems
+
+Nearly as much correlation between tracing & writing code as Parson's and
+writing code (0.37 vs 0.53).
+
+"Indications of structure can be used to make an 'easier' problem on
+an exam." - is this just introducing a side-channel to figuring out
+the answers?
+
+Student: "In the real world, you wouldn't trace the numbers, you'd run
+the program."
+
+### The Code Mangler: Evaluating Coding Ability Without Writing any Code
+
+Is speed and consistency really the best metric for grading?
+
