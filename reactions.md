@@ -536,3 +536,36 @@ the program."
 
 Is speed and consistency really the best metric for grading?
 
+
+
+# April 6
+
+### Disagreement: Lee&Ko'11
+
+The primary claim in the abstract, "those in the experimental
+condition (with a personable Gidget) completed significantly more
+levels in a similar amount of time" is misleading. It's *really*
+suggestive that they completed levels faster, which is not supported
+by the paper's evidence.
+
+
+### Question: Lee&all'14
+
+The major claim of this paper is that students learned to code using
+Gidget, but there are only vague descriptions of the sorts of things
+involved in its programs. What do the levels look like?
+
+You can play Gidget online! [http://www.helpgidget.org/](Gidget)
+
+
+### Interesting: Lee&Ko'15
+
+I hadn't made this connection before, but level designers for computer
+games ought to make good curriculum designers. Level design (for
+single-player levels), for all games but especially puzzle games, is
+almost entirely about teaching players (i) the mechanics of the game,
+and (ii) to become more skilled at playing the game. They deftly
+introduce new concepts and reinforce old concepts while staying at
+exactly the right level of difficulty to be fun. And they do it with
+little to no prose!  (I'm thinking of: Portal, The Talos Principle,
+The Witness.)
