@@ -569,3 +569,38 @@ introduce new concepts and reinforce old concepts while staying at
 exactly the right level of difficulty to be fun. And they do it with
 little to no prose!  (I'm thinking of: Portal, The Talos Principle,
 The Witness.)
+
+# April 11
+
+### Disagreement: Reges' The mystery of b := b = false
+
+Again, there's this leap from "these questions correlate with student
+performance" to "maybe this is a measure of innate ability". This
+seems like a strange leap to make given that Reges (i) describes these
+as code comprehension questions for important language constructs, and
+(ii) says that in his experience, the ability to answer questions like
+this is teachable.
+
+There seems to be a very simple explanation for these results: (i)
+most students can't trace code, (ii) code tracing is a good predictor
+of overall performance, and (iii) the *only* way to figure out what
+`b := b = false` will do is by code tracing.
+
+### Interest: Fleury's Programming in Java: Student-Constructed Rules
+
+I like the phrase "student-constructed rules" instead of
+misconceptions. All the examples seemed like reasonable
+overgeneralizations of true rules, that could have been countered by
+showing counterexamples (in the form of programs). Fleury seems to
+agree:
+
+"The students most often cited experience with programs as the most
+important source of their knowledge of Java."
+
+"By constructing sample programs with care, an instructor can avoid
+inadvertently fostering common misconceptions."
+
+### Question
+
+Has anyone attempted to make a repository of programs that act as
+counterexamples to misconceptions? Like a concept-inventory-lite.
